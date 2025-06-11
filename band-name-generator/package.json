@@ -1,0 +1,23 @@
+{
+  "name": "band-name-generator",
+  "version": "1.0.0",
+  "description": "A simple Band Name Generator application using JavaScript and Tailwind CSS.",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "tailwindcss build src/styles.css -o dist/styles.css",
+    "watch": "tailwindcss -i src/styles.css -o dist/styles.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "band",
+    "name",
+    "generator",
+    "javascript",
+    "tailwindcss"
+  ],
+  "author": "",
+  "license": "ISC"
+}
