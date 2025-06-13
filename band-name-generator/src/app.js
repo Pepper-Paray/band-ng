@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
         bandNameDisplay.textContent = bandName;
     });
 });
+module.exports = {
+  content: [
+    "./src/**/*.{html,js}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
