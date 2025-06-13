@@ -3,10 +3,18 @@
 const adjectives = ["Cool", "Funky", "Loud", "Silent", "Epic", "Mysterious", "Electric", "Wild"];
 const nouns = ["Tigers", "Dragons", "Wolves", "Eagles", "Sharks", "Bears", "Phoenixes", "Knights"];
 
+function getAdjective() {
+    return adjectives[Math.floor(Math.random() * adjectives.length)];
+}
+
+function getNoun() {
+    return nouns[Math.floor(Math.random() * nouns.length)];
+}
+
 function generateBandName() {
-    const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-    const randomNoun = nouns[Math.floor(Math.random() * nouns.length)];
-    return `${randomAdjective} ${randomNoun}`;
+    const adj = getAdjective();
+    const noun = getNoun();
+    return `The ${adj} ${noun}s`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
